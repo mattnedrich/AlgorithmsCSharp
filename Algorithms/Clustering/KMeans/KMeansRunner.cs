@@ -22,22 +22,6 @@ namespace MattNedrich.Algorithms.Clustering
             for (int i = 0; i < numCentroids; i++)
                 yield return new KMeansCluster(observations[i].FeatureRepresentation);
         }
-
-        private double[] ComputeCenter(IList<IClusterable> observations)
-        {
-            double[] total = new double[observations.Count];
-            for (int i = 0; i < observations.Count; i++)
-                total[i] += observations.Select(x => x.FeatureRepresentation[i]).Sum();
-            return total;
-        }
-
-        private double Distance(double[] a, double[] b)
-        {
-            double difference = 0;
-            for (int i = 0; i < a.Length; i++)
-                difference += Math.Pow(a[i] - b[i], 2);
-            return difference;
-        }
     }
 
     

@@ -22,6 +22,8 @@ namespace MattNedrich.Algorithms.Sorting
 
         public void Sort(IList<T> items)
         {
+            if (items == null)
+                throw new ArgumentNullException("items input to Quicksorter.Sort was null");
             Partition(items, 0, items.Count - 1);
         }
 

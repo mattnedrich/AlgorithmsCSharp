@@ -27,7 +27,6 @@ namespace MattNedrich.Algorithms.Clustering
             // must run at least one iteration
             if (previousCenter == null)
                 return true;
-
             // if Center == prevCenter than the center hasn't changed
             for (int i = 0; i < Center.Length; i++)
                 if (Center[i] != previousCenter[i])

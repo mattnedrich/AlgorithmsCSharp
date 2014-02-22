@@ -14,6 +14,8 @@ namespace MattNedrich.Algorithms.Sorting
     {
         public IEnumerable<T> Sort(IList<T> items)
         {
+            if (items == null)
+                throw new ArgumentNullException("items input to Mergesorter.Sort was null");
             if (items.Count <= 1)
                 return items;
             else

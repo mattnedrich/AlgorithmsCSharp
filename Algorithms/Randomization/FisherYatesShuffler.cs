@@ -23,6 +23,8 @@ namespace MattNedrich.Algorithms.Randomization
 
         public void Shuffle<T>(IList<T> items)
         {
+            if (items == null)
+                throw new ArgumentNullException("items input to FisherYatesShuffles.Shuffle was null");
             for (int i = items.Count - 1; i > 0; i--)
             {
                 int randomIndex = random.Next(0, i);
