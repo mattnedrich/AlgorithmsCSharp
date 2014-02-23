@@ -19,7 +19,7 @@ namespace AlgorithmsTests.Sorting
         }
 
         [Test]
-        public void Empty_Input_Works()
+        public void Empty_Input_Produces_Empty_Output()
         {
             List<int> emptyList = new List<int>();
             new Mergesorter<int>().Sort(emptyList);

@@ -11,6 +11,13 @@ namespace AlgorithmsTests.Clustering
     public class VectorMeanCalculatorTests
     {
         [Test]
+        public void Empty_Vector_Lists_Returns_Empty_Mean_Vector()
+        {
+            double[] meanVector = new VectorMeanCalculator().CalculateMean(new List<double[]>());
+            Assert.That(meanVector.Length == 0);
+        }
+
+        [Test]
         public void Mean_Of_Same_Vectors_Is_Same()
         {
             double[] vectorA = new double[] { 1 };

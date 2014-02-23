@@ -27,7 +27,7 @@ namespace MattNedrich.Algorithms.Randomization
                 throw new ArgumentNullException("items input to FisherYatesShuffles.Shuffle was null");
             for (int i = items.Count - 1; i > 0; i--)
             {
-                int randomIndex = random.Next(0, i);
+                int randomIndex = random.Next(0, i+1); // choose from 0 <= randomIndex <= i
                 T temp = items[randomIndex];
                 items[randomIndex] = items[i];
                 items[i] = temp;

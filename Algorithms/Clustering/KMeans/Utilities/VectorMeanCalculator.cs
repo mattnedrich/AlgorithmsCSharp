@@ -12,8 +12,15 @@ namespace MattNedrich.Algorithms.Clustering.KMeans.Utilities
             return CalculateMeanCommon((IList<double[]>)vectors);   
         }
 
+        public double[] CalculateMean(IEnumerable<double[]> vectors)
+        {
+            return CalculateMeanCommon(vectors.ToList());
+        }
+
         private double[] CalculateMeanCommon(IList<double[]> vectors)
         {
+            if (vectors.Count == 0)
+                return new double[0];
             int dimensions = vectors.FirstOrDefault().Length;
             double[] total = new double[dimensions];
             for (int dimension = 0; dimension < dimensions; dimension++)
