@@ -5,7 +5,7 @@ using System.Text;
 using NUnit.Framework;
 using MattNedrich.Algorithms.Clustering;
 
-namespace AlgorithmsTests.Clustering
+namespace AlgorithmsTest.Clustering
 {
     [TestFixture]
     public class KMeansClusterTests

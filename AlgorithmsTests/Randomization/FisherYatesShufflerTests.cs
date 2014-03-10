@@ -5,7 +5,7 @@ using System.Text;
 using NUnit.Framework;
 using MattNedrich.Algorithms.Randomization;
 
-namespace AlgorithmsTests.Randomization
+namespace AlgorithmsTest.Randomization
 {
     [TestFixture]
     public class FisherYatesShufflerTests

@@ -46,11 +46,16 @@
     <Compile Include="Clustering\KMeans\KMeansRunner.cs" />
     <Compile Include="Clustering\KMeans\Utilities\SumOfSquaresDistanceCalculator.cs" />
     <Compile Include="Clustering\KMeans\Utilities\VectorMeanCalculator.cs" />
+    <Compile Include="TextUtilities\AnagramHelper.cs" />
+    <Compile Include="TextUtilities\WordCounter.cs" />
+    <Compile Include="Numbers\PrimeFactorizer.cs" />
+    <Compile Include="Numbers\PrimeSieve.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Randomization\FisherYatesShuffler.cs" />
     <Compile Include="Sorting\Mergesorter.cs" />
     <Compile Include="Sorting\Quicksorter.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual C# Express 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms", "Algorithms.csproj", "{FB022501-2833-403E-BB19-7C06C9FCE9A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgorithmsTests", "..\AlgorithmsTests\AlgorithmsTests.csproj", "{3FA98A7F-1B17-4D16-AD53-CAAC9F2409A5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms.Test", "..\AlgorithmsTests\Algorithms.Test.csproj", "{3FA98A7F-1B17-4D16-AD53-CAAC9F2409A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

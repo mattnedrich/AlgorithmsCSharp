@@ -5,7 +5,7 @@ using System.Text;
 using NUnit.Framework;
 using MattNedrich.Algorithms.Clustering.KMeans.Utilities;
 
-namespace AlgorithmsTests.Clustering
+namespace AlgorithmsTest.Clustering
 {
     [TestFixture]
     public class SumOfSquaresDistanceCalculatorTests

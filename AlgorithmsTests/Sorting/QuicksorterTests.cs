@@ -5,7 +5,7 @@ using System.Text;
 using NUnit.Framework;
 using MattNedrich.Algorithms.Sorting;
 
-namespace AlgorithmsTests.Sorting
+namespace AlgorithmsTest.Sorting
 {
     [TestFixture]
     public class QuicksorterTests
